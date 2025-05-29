@@ -36,5 +36,5 @@ class Line:
         self.x2, self.y2 = point2
         
     def draw(self, tk_canvas, fill_color): #fill color is a string like 'black'
-        tk_canvas.create_line(self.x1, self.y1, self.x2, self.y2, fill=fill_color, width=2) #how to get create_line to not be white?
+        Canvas.create_line(self.x1, self.y1, self.x2, self.y2, fill=fill_color, width=2) #how to get create_line to not be white? it is supposed to accept a canvas as a parameter.
         
